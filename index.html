@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!--文章全体のタグ付け-->
+<html lang="ja"> <!--型の宣言--> <!--lang="ja"は日本語で書くの意味-->
+  <head>  <!-- headはこのファイル全体の説明文を入れる -->
+    <meta charset="utf-8"> <!--コンピュータが何のファイル形式を使うか宣言-->
+    <title>太郎のポートフォリオサイト</title> <!-- サイト名の宣言 -->
+    <link rel="icon" href="favicon.ico"> <!-- サイトの左上のアイコン -->
+    <meta name="description" content="太郎のポートフォリオサイトです。">
+    <!-- <style> <!-- cssを書くためのタグ
+       h1{
+        color:red;
+      } /*h1を全て赤にする*/ /*h1をセレクタ、colorのようなスタイルの部分をプロパティと呼ぶ*/
+    </style> -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <navi>
+        <ul> <!--縦に並べる→orなら番号付き-->
+          <li class="current">
+            <a href="index.html">
+            HOME
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              ABOUT
+            </a>
+          </li>
+        </ul>
+      </navi>
+    </header>
+
+    <section>
+      <img src="images/taro[1].png" width="140" height="140" alt="太郎のアイコン" class="icon"> <!--画像の貼り付け-->  <!-- 画像にiconというクラスを付けた -->
+      <h1>河村好泰</h1> <!--h1で見出しに特出し-->
+      <p>UI/UXデザイナー見習いです</p> <!--pは文章という意味-->
+
+      <div class="works">
+        <section>
+          <img src="images/work1[2].png" width="400" height="260" alt="勇者ゲーム">
+          <h1>勇者ゲーム</h1>
+          <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+        </section>
+
+        <section>
+          <img src="images/work2[1].png" width="400" height="260" alt="宝探しゲーム">
+          <h1>宝探しゲーム</h1>
+          <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+        </section>
+
+        <section>
+          <img src="images/work3[1].png" width="400" height="260" alt="神経衰弱">
+          <h1>神経衰弱</h1>
+          <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+        </section>
+      </div>
+
+    </section>
+    <footer>
+      <ul>
+      <li>
+        <a href="mailto:yoshiyasu.kawamura@gmail.com" target="_blanc">
+          <img src="images/mail[1].png" width="20" height="20" alt="メール送信">
+        </a>
+      </li>
+      <li>
+        <a href="https://dotinstall.com" target="_blanc" > <!-- target="_blanc" →新しいタブで開く -->
+          <img src="images/blog.png" width="20" height="20" alt="ブログサイトへ">
+        </a>
+      </li>
+      <li>
+        <a href="https://dotinstall.com" target="_blanc">
+          <img src="images/photos[1].png" width="20" height="20" alt="写真サイトへ">
+        </a>
+      </li>
+      </ul>
+      <p> (C) Taro Yamada</p>
+    </footer>
+
+  </body>
+</html>
