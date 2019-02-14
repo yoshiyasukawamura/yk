@@ -1,0 +1,141 @@
+ body{
+    color:red; /*h1を全て赤にする*/
+    color:rgb(0,255,0); /*rgbをそれぞれ0～255で混ぜる*/
+    color:#0000ff; /*16進数で定義するなら楽*/
+    color:00f ; /*同じ数が並ぶなら省略可能*/
+    color:#333;
+    font-family: Verdana,sans-serif; /*フォントの設定、１つ目が無ければ２つ目を適用*/
+    /* margin-top:0px;
+    margin-bottom:0px;
+    margin-right:0px;
+    margin-left:0px;
+    margin:0px; */
+    margin:0
+
+
+  }  /*h1をセレクタ、colorのようなスタイルの部分をプロパティと呼ぶ*/
+/*同じセレクタに複数のプロパティがある場合は、後のものが優先される*/
+
+header{
+  /* background-color: pink;/*ヘッダー領域の背景色を加工*/
+  text-align: right;/*header内全てを右そろえにする*/
+  padding:10px;
+  background-image:/*背景画像を設定*/
+  url(../images/header[1].png);
+  height:240px;
+  background-size:cover;/*元ファイルの縦横比を維持*/
+  background-position:50% 50%;/*画像の中心を固定（デフォルトでは左上が固定）*/
+  margin-bottom: 60px;
+}
+
+header ul{/*header内のulと指定*/
+  margin:0;
+  list-style-type: none;
+  padding-left:0;
+}
+
+header li{
+  display: inline-block;/*改行を無くす*/
+  /* padding-top:4px;
+  padding-bottom:4px;
+  padding-right:8px;
+  padding-left:8px; */
+  padding:4px 8px;
+  font-size: 12px;
+}
+
+header li > a{/*li直下のaと指定*/
+  text-decoration:none;/*リンクの下線を無くす*/
+  color: inherit;/*親要素を引き継ぐ（この場合はbodyのcolor）*/
+}
+
+header li > a:hover{
+  color: royalblue;
+}/*a:hoverでaにマウスが乗った時という意味になる*/
+
+.current{
+  border-bottom: 4px solid royalblue;
+}
+
+section{
+  text-align: center;
+}
+
+section h1{
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+section p{
+  margin-top: 0;
+  font-size:14px;
+}
+
+.icon{
+  /* border-radius: 30px; */  /* 半径●pxで丸める */
+  /* border-radius: 70px; */
+  border-radius: 50%;
+  /* border-color: pink;
+  border-width: 5px;
+  border-style: solid; */
+  border:5px solid white; /*5px 実線 白*/
+  box-shadow: 0 0 5px gray;
+  /* box-shadow: 10px 10px 5px black;  */
+  /* box-shadow: x y ぼかし 色;  */
+}
+
+.works{
+  width:400px;
+  margin-left:auto;/*余った余白は全て左に*/
+  margin-right:auto;/*左右両方設定すれば真ん中揃えに*/
+  margin:60px auto;/*縦 横 の順に記載*/
+  border-bottom: 1px solid gray;
+}
+
+.works > section{
+  margin-bottom: 40px;/*セクション間に空白*/
+}
+
+.works h1,/*同じプロパティを指示するなら、,でセレクタを繋げればOK*/
+.works p{
+  text-align: left;
+}
+
+footer{
+  width:400px;
+  margin:0 auto 60px;/*上 左右 下 の順に記述*/
+}
+
+footer ul{/*header内のulと指定*/
+  margin:0;
+  list-style-type: none;
+  padding-left:0;
+  float: left;/*浮かせる→下のコンテンツと並べられる*/
+}
+
+footer li{
+  display: inline-block;/*改行を無くす*/
+  /* padding-top:4px;
+  padding-bottom:4px;
+  padding-right:8px;
+  padding-left:8px; */
+}
+
+footer li > a:hover{
+  opacity: 0.6;/*60％の透明度にする*/
+}/*a:hoverでaにマウスが乗った時という意味になる*/
+
+footer p{
+  color:lightgray;
+  font-size:14px;
+  text-align: right;
+}
+
+.about{
+  width:400px;
+  margin: 0 auto 60px;
+}
+
+.about p{
+  text-align: left;
+}
